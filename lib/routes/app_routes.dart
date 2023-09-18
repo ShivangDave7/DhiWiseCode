@@ -3,14 +3,12 @@ import 'package:flutterqa/presentation/credit_card_and_debit_screen/credit_card_
 import 'package:flutterqa/presentation/signinwithapi_screen/signinwithapi_screen.dart';
 import 'package:flutterqa/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:flutterqa/presentation/forgot_password_screen/forgot_password_screen.dart';
-import 'package:flutterqa/presentation/splash_screen/splash_screen.dart';
 import 'package:flutterqa/presentation/login_screen/login_screen.dart';
 import 'package:flutterqa/presentation/register_form_screen/register_form_screen.dart';
 import 'package:flutterqa/presentation/dashboard_container1_screen/dashboard_container1_screen.dart';
 import 'package:flutterqa/presentation/offer_screen/offer_screen.dart';
 import 'package:flutterqa/presentation/favorite_product_screen/favorite_product_screen.dart';
 import 'package:flutterqa/presentation/product_detail_screen/product_detail_screen.dart';
-import 'package:flutterqa/presentation/review_product_screen/review_product_screen.dart';
 import 'package:flutterqa/presentation/write_review_fill_screen/write_review_fill_screen.dart';
 import 'package:flutterqa/presentation/notification_screen/notification_screen.dart';
 import 'package:flutterqa/presentation/notification_offer_screen/notification_offer_screen.dart';
@@ -81,8 +79,6 @@ class AppRoutes {
 
   static const String forgotPasswordScreen = '/forgot_password_screen';
 
-  static const String splashScreen = '/splash_screen';
-
   static const String loginScreen = '/login_screen';
 
   static const String registerFormScreen = '/register_form_screen';
@@ -97,8 +93,6 @@ class AppRoutes {
   static const String favoriteProductScreen = '/favorite_product_screen';
 
   static const String productDetailScreen = '/product_detail_screen';
-
-  static const String reviewProductScreen = '/review_product_screen';
 
   static const String writeReviewFillScreen = '/write_review_fill_screen';
 
@@ -261,14 +255,12 @@ class AppRoutes {
     signinwithapiScreen: (context) => SigninwithapiScreen(),
     signUpScreen: (context) => SignUpScreen(),
     forgotPasswordScreen: (context) => ForgotPasswordScreen(),
-    splashScreen: (context) => SplashScreen(),
     loginScreen: (context) => LoginScreen(),
     registerFormScreen: (context) => RegisterFormScreen(),
     dashboardContainer1Screen: (context) => DashboardContainer1Screen(),
     offerScreen: (context) => OfferScreen(),
     favoriteProductScreen: (context) => FavoriteProductScreen(),
     productDetailScreen: (context) => ProductDetailScreen(),
-    reviewProductScreen: (context) => ReviewProductScreen(),
     writeReviewFillScreen: (context) => WriteReviewFillScreen(),
     notificationScreen: (context) => NotificationScreen(),
     notificationOfferScreen: (context) => NotificationOfferScreen(),

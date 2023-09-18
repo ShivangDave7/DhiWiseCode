@@ -553,7 +553,7 @@ class FavoritesModulesScreen extends StatelessWidget {
                                                           bottom: 6,
                                                         ),
                                                         decoration:
-                                                            AppDecoration.fill7
+                                                            AppDecoration.fill6
                                                                 .copyWith(
                                                           borderRadius:
                                                               BorderRadiusStyle

@@ -163,9 +163,6 @@ class AppDecoration {
           ),
         ],
       );
-  static BoxDecoration get fill5 => BoxDecoration(
-        color: appTheme.blue50,
-      );
   static BoxDecoration get outline2 => BoxDecoration(
         color: appTheme.gray50,
         boxShadow: [
@@ -184,8 +181,11 @@ class AppDecoration {
           ),
         ],
       );
+  static BoxDecoration get fill5 => BoxDecoration(
+        color: appTheme.red700,
+      );
   static BoxDecoration get fill4 => BoxDecoration(
-        color: appTheme.amberA200,
+        color: appTheme.blue50,
       );
   static BoxDecoration get outline1 => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(1),
@@ -223,9 +223,6 @@ class AppDecoration {
           ),
         ],
       );
-  static BoxDecoration get fill7 => BoxDecoration(
-        color: appTheme.gray900,
-      );
   static BoxDecoration get gradientnamered900nameredA700 => BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment(
@@ -241,9 +238,6 @@ class AppDecoration {
             appTheme.redA700,
           ],
         ),
-      );
-  static BoxDecoration get fill6 => BoxDecoration(
-        color: appTheme.red700,
       );
   static BoxDecoration get outline3 => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(0.42),
@@ -262,6 +256,9 @@ class AppDecoration {
             ),
           ),
         ],
+      );
+  static BoxDecoration get fill6 => BoxDecoration(
+        color: appTheme.gray900,
       );
   static BoxDecoration get txtWhite => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer.withOpacity(1),

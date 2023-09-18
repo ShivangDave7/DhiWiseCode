@@ -4,7 +4,7 @@ class VisualSearchTakingAPhotoScreen extends StatelessWidget {VisualSearchTaking
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey();
 
-@override Widget build(BuildContext context) { mediaQueryData = MediaQuery.of(context); return SafeArea(child: Scaffold(backgroundColor: theme.colorScheme.onPrimaryContainer.withOpacity(1), body: SizedBox(width: double.maxFinite, child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [Container(decoration: AppDecoration.outline2, child: Container(padding: getPadding(top: 8, bottom: 8), decoration: AppDecoration.outline, child: CustomAppBar(height: getVerticalSize(28), leadingWidth: 32, leading: AppbarImage(height: getSize(24), width: getSize(24), svgPath: ImageConstant.imgArrowleftOnprimary, margin: getMargin(left: 8), onTap: () {onTapArrowleft26(context);}), centerTitle: true, title: AppbarSubtitle(text: "Search by taking a photo")))), CustomImageView(imagePath: ImageConstant.imgD3bdd2cbe99a1c4, height: getVerticalSize(618), width: getHorizontalSize(375))])), bottomNavigationBar: CustomBottomBar(onChanged: (BottomBarEnum type) {Navigator.pushNamed(navigatorKey.currentContext!, getCurrentRoute(type));}))); } 
+@override Widget build(BuildContext context) { mediaQueryData = MediaQuery.of(context); return SafeArea(child: Scaffold(backgroundColor: theme.colorScheme.onPrimaryContainer.withOpacity(1), body: SizedBox(width: double.maxFinite, child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [Container(decoration: AppDecoration.outline2, child: Container(padding: getPadding(top: 8, bottom: 8), decoration: AppDecoration.outline, child: CustomAppBar(height: getVerticalSize(28), leadingWidth: 32, leading: AppbarImage(height: getSize(24), width: getSize(24), svgPath: ImageConstant.imgArrowleftOnprimary, margin: getMargin(left: 8), onTap: () {onTapArrowleft24(context);}), centerTitle: true, title: AppbarSubtitle(text: "Search by taking a photo")))), CustomImageView(imagePath: ImageConstant.imgD3bdd2cbe99a1c4, height: getVerticalSize(618), width: getHorizontalSize(375))])), bottomNavigationBar: CustomBottomBar(onChanged: (BottomBarEnum type) {Navigator.pushNamed(navigatorKey.currentContext!, getCurrentRoute(type));}))); } 
 ///Handling route based on bottom click actions
 String getCurrentRoute(BottomBarEnum type) { switch (type) {case BottomBarEnum.Home: return AppRoutes.dashboardContainerPage; case BottomBarEnum.Explore: return AppRoutes.explorePage; case BottomBarEnum.Cart: return AppRoutes.cartPage; case BottomBarEnum.Offer: return AppRoutes.offerScreenPage; case BottomBarEnum.Account: return AppRoutes.myProfileMyOrdersOrderDetailsPage; default: return "/";} } 
 ///Handling page based on route
@@ -15,5 +15,5 @@ Widget getCurrentPage(String currentRoute) { switch (currentRoute) {case AppRout
 ///
 /// This function takes a [BuildContext] object as a parameter, which is used
 /// to navigate back to the previous screen.
-onTapArrowleft26(BuildContext context) { Navigator.pop(context); } 
+onTapArrowleft24(BuildContext context) { Navigator.pop(context); } 
  }
