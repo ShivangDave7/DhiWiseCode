@@ -1,0 +1,10 @@
+import 'package:flutter/material.dart';import 'package:flutterqa/core/app_export.dart';import 'package:flutterqa/widgets/custom_elevated_button.dart';import 'package:flutterqa/widgets/custom_icon_button.dart';class SuccessScreen extends StatelessWidget {const SuccessScreen({Key? key}) : super(key: key);
+
+@override Widget build(BuildContext context) { mediaQueryData = MediaQuery.of(context); return SafeArea(child: Scaffold(backgroundColor: theme.colorScheme.onPrimaryContainer.withOpacity(1), body: Container(width: double.maxFinite, padding: getPadding(left: 16, right: 16), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [CustomIconButton(height: 72, width: 72, padding: getPadding(all: 24), decoration: IconButtonStyleHelper.outlinePrimary, child: CustomImageView(svgPath: ImageConstant.imgCheckmarkOnprimarycontainer)), Padding(padding: getPadding(top: 15), child: Text("Success", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: CustomTextStyles.headlineSmallPrimaryContainer.copyWith(letterSpacing: getHorizontalSize(0.5)))), Opacity(opacity: 0.5, child: Padding(padding: getPadding(top: 11), child: Text("thank you for shopping using lafyuu", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: CustomTextStyles.bodySmallPoppinsPrimaryContainer12.copyWith(letterSpacing: getHorizontalSize(0.5))))), CustomElevatedButton(text: "Back To Order", margin: getMargin(top: 16, bottom: 5), buttonStyle: CustomButtonStyles.outlinePrimaryTL5.copyWith(fixedSize: MaterialStateProperty.all<Size>(Size(double.maxFinite, getVerticalSize(57)))), buttonTextStyle: CustomTextStyles.titleSmallPoppinsOnPrimaryContainer, onTap: () {onTapBacktoorder(context);})])))); } 
+/// Navigates to the orderScreen when the action is triggered.
+///
+/// The [BuildContext] parameter is used to build the navigation stack.
+/// When the action is triggered, this function uses the [Navigator] widget
+/// to push the named route for the orderScreen.
+onTapBacktoorder(BuildContext context) { Navigator.pushNamed(context, AppRoutes.orderScreen); } 
+ }
